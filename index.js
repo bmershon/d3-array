@@ -18,6 +18,7 @@ export {default as pairs} from "./src/pairs";
 export {default as permute} from "./src/permute";
 export {default as quantile} from "./src/quantile";
 export {default as range} from "./src/range";
+export {default as rotate} from "./src/rotate";
 export {default as scan} from "./src/scan";
 export {default as shuffle} from "./src/shuffle";
 export {default as sum} from "./src/sum";

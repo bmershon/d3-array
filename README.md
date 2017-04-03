@@ -295,6 +295,24 @@ d3.range(0, 1, 1 / 49); // BAD: returns 50 elements!
 d3.range(49).map(function(d) { return d / 49; }); // GOOD: returns 49 elements.
 ```
 
+<a name="rotate" href="#rotate">#</a> d3.<b>rotate</b>(<i>array</i><first>[, <i>middle</i>, <i>last</i>]) [<>](https://github.com/d3/d3-array/blob/master/src/rotate.js "Source")
+
+Modifies the array in-place by interchanging elements in the valid index range [*first*, *middle*) with elements in the valid index range [*middle, last*). If *middle* and *last* are omitted, the argument *first* is interpreted as *k*, number of steps to rotate the given array to the right.
+
+```js
+var array = [0, 1, 2, 3, 4, 5, 6];
+var index = d3.rotate(array, 2);
+// array is now [5, 6, 0, 1, 2, 3, 4]
+// index is 2, the position to which array[0] moved.
+```
+
+```js
+var array = [0, 1, 2, 3, 4, 5, 6];
+var index = d3.rotate(array, 2, 4, 6);
+// array is now [0, 1, 4, 5, 2, 3, 6]
+// index is 5
+```
+
 <a name="transpose" href="#transpose">#</a> d3.<b>transpose</b>(<i>matrix</i>) [<>](https://github.com/d3/d3-array/blob/master/src/transpose.js "Source")
 
 Uses the [zip](#zip) operator as a two-dimensional [matrix transpose](http://en.wikipedia.org/wiki/Transpose).
