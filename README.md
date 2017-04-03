@@ -295,7 +295,7 @@ d3.range(0, 1, 1 / 49); // BAD: returns 50 elements!
 d3.range(49).map(function(d) { return d / 49; }); // GOOD: returns 49 elements.
 ```
 
-<a name="rotate" href="#rotate">#</a> d3.<b>rotate</b>(<i>array</i><first>[, <i>middle</i>, <i>last</i>]) [<>](https://github.com/d3/d3-array/blob/master/src/rotate.js "Source")
+<a name="rotate" href="#rotate">#</a> d3.<b>rotate</b>(<i>array</i><i>first</i>[, <i>middle</i>, <i>last</i>]) [<>](https://github.com/d3/d3-array/blob/master/src/rotate.js "Source")
 
 Modifies the array in-place by interchanging elements in the valid index range [*first*, *middle*) with elements in the valid index range [*middle, last*). If *middle* and *last* are omitted, the argument *first* is interpreted as *k*, number of steps to rotate the given array to the right.
 
