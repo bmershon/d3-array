@@ -299,7 +299,7 @@ d3.range(49).map(function(d) { return d / 49; }); // GOOD: returns 49 elements.
 
 Modifies the array in-place by interchanging elements in the valid index range [*first*, *middle*) with elements in the valid index range [*middle, last*). If *middle* and *last* are omitted, the argument *first* is interpreted as *k*, the number of steps to rotate the given array to the right.
 
-Returns the index of where the element at the index *first* has moved when *first*, *middle*, and *last* are specified; otherwise, returns the index of where the first element of the array has moved after rotating *k* elements to the right (where *k* is specified as *first*).
+Returns the *successor* to the index of where the element at the index *first* has moved when *first*, *middle*, and *last* are specified (the open end of a range); otherwise, returns the index of where the first element of the array has moved after rotating *k* elements to the right (where *k* is specified as *first*).
 
 ```js
 var array = [0, 1, 2, 3, 4, 5, 6];
